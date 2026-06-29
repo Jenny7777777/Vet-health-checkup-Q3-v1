@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>2026 秋季健檢專案（Q3）｜慈愛動物醫院 內部專區</title>
+<title>2026 秋季健檢專案（Q3）v2｜慈愛動物醫院 內部專區</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@600;700;900&display=swap" rel="stylesheet">
@@ -387,6 +387,13 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
 .tbl tr.changed td{background:#FCEFEC!important}
 .tbl td .rm{color:var(--ink-faint);text-decoration:line-through}
 
+/* 本次（v1→v2）修訂標記 */
+.v2tag{display:inline-block;font-family:var(--data);font-size:12px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--brown);border-radius:5px;padding:2px 9px;margin-left:8px;vertical-align:middle}
+h2 .v2tag,h3 .v2tag{font-size:12px}
+.q3box.v2{border-color:#D8C3A0;border-left-color:var(--brown);background:#F6EFE3}
+.q3box.v2 .h{color:var(--brown)}
+.v2note{font-size:13px;color:var(--brown);font-weight:600}
+
 /* ===================== 修訂：品牌字級、淺底上下章卡片 ===================== */
 .brand img{width:40px}
 .brand .name{display:block;font-size:23px;line-height:1.12;font-weight:700}
@@ -415,7 +422,7 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
   <nav class="nav"><a data-go="ch-index" data-nav="ch-index"><span class="cn">1</span>使命</a><a data-go="ch-plans" data-nav="ch-plans"><span class="cn">2</span>方案</a><a data-go="ch-communicate" data-nav="ch-communicate"><span class="cn">3</span>溝通</a><a data-go="ch-sop" data-nav="ch-sop"><span class="cn">4</span>操作</a><a data-go="ch-rewards" data-nav="ch-rewards"><span class="cn">5</span>獎金</a><span class="sep">·</span><a class="util" data-go="ch-cheatsheet" data-nav="ch-cheatsheet">速查</a></nav>
 </div></header>
 <div class="progress"><div class="stepper"><a class="s" data-i="0" data-go="ch-index"><span class="dot">1</span><span class="nm">使命</span></a><span class="line"></span><a class="s" data-i="1" data-go="ch-plans"><span class="dot">2</span><span class="nm">方案</span></a><span class="line"></span><a class="s" data-i="2" data-go="ch-communicate"><span class="dot">3</span><span class="nm">溝通</span></a><span class="line"></span><a class="s" data-i="3" data-go="ch-sop"><span class="dot">4</span><span class="nm">操作</span></a><span class="line"></span><a class="s" data-i="4" data-go="ch-rewards"><span class="dot">5</span><span class="nm">獎金</span></a></div></div>
-<div class="wrap"><div class="legend">本份為 <b>2026 秋季健檢專案（Q3）</b> 版本。<span class="q3tag">Q3 變更</span> 標記處為本季調整、括號內或備註為 Q2 舊制；<span class="q3tag new">Q3 新增</span> 為新增項目；<span class="q3tag eval">待評估</span> 需總經理／院長拍板。</div></div>
+<div class="wrap"><div class="legend">本份為 <b>2026 秋季健檢專案（Q3）v2</b> 版本。<span class="q3tag">Q3 變更</span> 標記處為本季調整、括號內或備註為 Q2 舊制；<span class="q3tag new">Q3 新增</span> 為新增項目；<span class="q3tag eval">待評估</span> 需總經理／院長拍板；<span class="v2tag">本次修訂</span> 為 v1 與總經理、採購冠葦討論後本版（v2）之調整。</div></div>
 <main>
 <section class="chapter" id="ch-index" data-i="0">
 <div class="wrap">
@@ -439,10 +446,19 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
       <span class="h">2026 秋季（Q3）主要變更</span>
       <ul style="margin:.4em 0 0;padding-left:1.2em;line-height:2">
         <li><b>B 方案：</b>移除血壓、改為「檢驗自選一項」，價格維持 3,950／3,750。</li>
-        <li><b>健檢標準放寬：</b>小病經醫師推廣、飼主額外加做完整健檢（血檢）者可計入。</li>
-        <li><b>新增加購：</b>預防針（當天 85 折）、寄生蟲預防訂閱制（處方飼料訂閱待評估）。</li>
+        <li><b>健檢標準放寬：</b>放寬但<b>限定搭配範圍</b>——疫苗、結紮、皮膚病三類；洗牙方案另份報告說明。</li>
+        <li><b>新增加購：</b>寄生蟲預防（同品項兩件原價 8 折）；處方飼料訂閱、預防針加購均改列待評估。</li>
         <li><b>獎金分流：</b>總院改個人業績（無門檻按件）；分院＋曼哈頓達團體目標後按件＋團體競賽。</li>
-        <li><b>各院目標：</b>改為 2025/7–9 月來客數 × 轉換率，<b>2.0／2.5／3.0% 三檔待總經理擇一</b>。</li>
+        <li><b>各院目標：</b>改為 2025/7–9 月來客數 × 轉換率，<b>2.0／2.5% 兩檔待總經理擇一</b>。</li>
+      </ul>
+    </div>
+    <div class="q3box v2" style="margin-top:14px">
+      <span class="h">本次修訂摘要（v1 → v2）｜與總經理、採購冠葦討論後</span>
+      <ul style="margin:.4em 0 0;padding-left:1.2em;line-height:2">
+        <li><b>① 健檢標準放寬：</b>原「因小病就診」太難定奪，改為<b>放寬但限定開放範圍</b>：可搭配 1 疫苗、2 結紮、3 皮膚病；<b>4 洗牙方案</b>加入評估應可行，於其他份報告說明。</li>
+        <li><b>② 寄生蟲預防訂閱：</b>驅蟲藥<b>不限品項</b>，享<b>同品項兩件原價 8 折</b>加購價；<b>不可退換貨、特價品除外</b>。討論後傾向一個 case 只能加購一次（加購次數待評估）。</li>
+        <li><b>③ 處方飼料訂閱：</b>評估中、<b>先不公告</b>；因希爾思（Hill's）可能另提供行銷費用，待確認金額後再另做加碼。</li>
+        <li><b>④ 預防針加購：</b>討論後認為預防針屬例行項目，可增量者僅限未施打或在他院施打之客群，否則形同我方毛損，故<b>改列待評估</b>。</li>
       </ul>
     </div>
   </section>
@@ -535,7 +551,7 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
     <p class="lead muted">可以按照順序看完，也可以直接跳到需要的章節。</p>
     <div class="roadmap">
       <div class="rm c-red start"><div class="hd"><span class="n">01</span>使命與價值<span class="badge-start">你在這裡 · 從這開始</span></div><p>預防醫學的價值、毛孩老化速度，以及健檢衛教。</p></div>
-      <a class="rm c-gold" data-go="ch-plans"><div class="hd"><span class="n">02</span>方案與規則</div><p>A／B 方案（B 本季調整）、各區價格、1+N 加購、健檢標準放寬、預防針與訂閱制。</p></a>
+      <a class="rm c-gold" data-go="ch-plans"><div class="hd"><span class="n">02</span>方案與規則</div><p>A／B 方案（B 本季調整）、各區價格、1+N 加購、健檢標準放寬（限定範圍）、寄生蟲訂閱與待評估項目。</p></a>
       <a class="rm c-orange" data-go="ch-communicate"><div class="hd"><span class="n">03</span>現場溝通</div><p>三種飼主話術、櫃台／醫師／助理分工、實戰 Q&amp;A。</p></a>
       <a class="rm c-brown" data-go="ch-sop"><div class="hd"><span class="n">04</span>操作 SOP</div><p>NX 系統開單與結帳圖解（含費用校正）。</p></a>
       <a class="rm c-blue" data-go="ch-rewards"><div class="hd"><span class="n">05</span>成效與獎金</div><p>管理部追蹤指標、各院目標（本季改制）、按件計酬與團體競賽。</p></a>
@@ -659,8 +675,8 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
         </ul>
       </div>
     </div>
-    <div class="q3box new"><span class="h">Q3 新增加購｜預防針</span>
-      飼主回院健檢，<b>當天若剛好可施打疫苗，給 85 折加購價</b>（不限劑數，依醫師判斷與疫苗計畫）。讓「每年固定疫苗計畫」成為飼主定期回院、順道健檢的自然節點。
+    <div class="q3box v2"><span class="h">本次修訂｜預防針加購改列待評估</span>
+      原 v1 將預防針列為 Q3 新增加購（回院健檢當天可 85 折加購、不限劑數）。討論後考量：預防針屬例行項目，真正能帶來增量的僅限「原本未施打」或「在他院施打」之客群，對既有按時施打者而言反而形同毛損，故本項<b>改列待評估</b><span class="q3tag eval">待評估</span>，待確認可增量客群與毛損影響後再定是否納入。
     </div>
     <div class="note warn" style="margin-top:14px"><span class="t">透明原則（務必遵守）</span>執行 N 加購前，務必提供「加購明細與預估費用」，經飼主確認後再執行。若需鎮靜／麻醉，費用另計。本活動優惠不得與其他折扣、折價券、員工價、異業優惠併用。</div>
   </section>
@@ -669,22 +685,27 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
 <div class="wrap">
   <section class="block">
     <span class="eyebrow">健檢情境認定 · scope</span>
-    <h2>健檢標準放寬<span class="q3tag">Q3 變更</span></h2>
-    <p class="lead muted">本季放寬「可計入健檢」的情境，但仍守住「方案＋加購用於健檢、而非非健檢情境」的原則。</p>
-    <div class="q3box"><span class="h">Q3 放寬認定</span>
-      因<b>小病就診</b>（如腸胃道、皮膚等小病），經<b>醫師主動推廣、飼主「額外」加做完整健檢（血檢）</b>（即非診斷該小病所必需的最低檢查）者，<b>得計入健檢方案</b>。
-      <span class="q2">（Q2：僅單純「年度健檢」情境適用。）</span>
+    <h2>健檢標準放寬<span class="q3tag">Q3 變更</span><span class="v2tag">本次修訂</span></h2>
+    <p class="lead muted">本季放寬「可計入健檢」的情境，但<b>限定開放範圍</b>，仍守住「方案＋加購用於健檢、而非非健檢情境」的原則。</p>
+    <div class="q3box v2"><span class="h">本次修訂｜由「小病就診」改為限定四類搭配情境</span>
+      v1 原採「因小病就診經醫師推廣、飼主額外加做完整健檢即可計入」，惟<b>「因小病就診」實務上太難定奪</b>。本版改為：<b>健檢仍放寬，但僅限以下明確情境搭配時得計入健檢方案</b>，便於現場執行與稽核認定。
+    </div>
+    <div class="grid g2" style="margin-top:18px">
+      <div class="card" style="border-top:4px solid var(--gold)"><div class="kicker">開放搭配 1</div><h3>疫苗</h3><p class="small muted">飼主回院施打疫苗時，<b>額外</b>加做完整健檢（血檢）者，得計入。讓年度疫苗計畫成為回院健檢的自然節點。</p></div>
+      <div class="card" style="border-top:4px solid var(--gold)"><div class="kicker">開放搭配 2</div><h3>結紮</h3><p class="small muted"><b>健康動物結紮術前</b>之健檢得計入；其餘術前評估（既有疾病、不適主訴等）一律不適用。</p></div>
+      <div class="card" style="border-top:4px solid var(--gold)"><div class="kicker">開放搭配 3</div><h3>皮膚病</h3><p class="small muted">皮膚問題就診時，經醫師推廣、飼主<b>額外</b>加做完整健檢（即非診斷該皮膚問題所必需的最低檢查）者，得計入。</p></div>
+      <div class="card" style="border-top:4px solid var(--brown)"><div class="kicker">開放搭配 4 <span class="v2note">· 另述</span></div><h3>洗牙方案</h3><p class="small muted">評估<b>將洗牙方案納入搭配應屬可行</b>，細節（資格、計入規則、與洗牙專案整合）將於<b>其他份報告</b>另行說明。</p></div>
     </div>
     <div class="q3box"><span class="h">仍不適用（維持）</span>
-      重症就診、不適主訴之疾病評估、既有疾病回診追蹤（即就醫診斷時本該進行血檢者），仍不得使用健檢價。<b>術前評估僅「健康動物結紮術前」適用，其餘術前評估一律不適用。</b>
+      重症就診、不適主訴之疾病評估、既有疾病回診追蹤（即就醫診斷時本該進行血檢者），仍不得使用健檢價。<b>上述開放範圍以外之情境，一律不計入。</b>
     </div>
-    <p class="small muted" style="margin-top:8px">此認定同時影響獎金「達標件數」計入；稽核依此原則認定。建議定稿前由管理層確認文字。</p>
+    <p class="small muted" style="margin-top:8px">此認定同時影響獎金「達標件數」計入；稽核依此原則認定。洗牙方案搭配之最終文字，以另份報告與管理層拍板為準。</p>
   </section>
 </div>
 
 <div class="wrap">
   <section class="block">
-    <span class="eyebrow">長尾留客 · subscription<span class="q3tag new">Q3 新增</span></span>
+    <span class="eyebrow">長尾留客 · subscription<span class="q3tag new">Q3 新增</span><span class="v2tag">本次修訂</span></span>
     <h2>寄生蟲預防 × 訂閱制</h2>
     <p class="lead muted">本季導入「預防性商品長期訂閱制」，把單次健檢轉化為「持續的健康關係」。這是健檢方案最重要的長尾效應設計之一。</p>
     <div class="grid g3" style="margin-top:22px">
@@ -692,12 +713,25 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
       <div class="card"><div class="kicker">為什麼重要</div><h3>提升終身價值</h3><p class="small muted">每次健檢同時是訂閱續期，回診率、客戶終身價值與毛孩健康連續性一起提升——這是把一次性活動變成長期關係的關鍵。</p></div>
       <div class="card"><div class="kicker">怎麼綁定</div><h3>訂閱到期 = 下次健檢</h3><p class="small muted">訂閱週期對齊建議血檢間隔，到期即提醒回院，回院同時完成健檢與續訂，形成正向循環。</p></div>
     </div>
+    <div class="q3box v2"><span class="h">本次修訂｜驅蟲藥加購規則</span>
+      <ul style="margin:.4em 0 0;padding-left:1.2em;line-height:1.9">
+        <li>驅蟲藥<b>不限品項</b>。</li>
+        <li>享<b>同品項兩件、原價 8 折</b>之加購價。</li>
+        <li><b>不可退換貨</b>。</li>
+        <li><b>特價品除外</b>。</li>
+        <li>討論後傾向：<b>一個 case 只能加購一次</b>。<span class="q3tag eval">加購次數待評估</span></li>
+      </ul>
+      <span class="q2" style="display:block;margin-top:6px">註：此「兩件原價 8 折」為驅蟲藥之專屬加購規則，與健檢核心方案 75 折、一般醫療加購 85 折分屬不同優惠，現場開單請勿混用。</span>
+    </div>
     <div class="q3box eval"><span class="h">待評估｜建議訂閱週期</span>
       <b>熟齡（7 歲↑）→ 6 個月訂閱</b>（半年回院血檢時續訂，開啟新週期）；<b>幼／青年 → 12 個月訂閱</b>（年度健檢時續訂）。實際週期與品項需與採購共同評估。
     </div>
     <p class="small muted" style="margin-top:8px">訂閱品項、價格、物流與系統設定另以專屬文件規範（方案頁僅作概念說明）。</p>
-    <h3 style="margin-top:26px">處方飼料 × 訂閱制 <span class="q3tag eval">待評估</span></h3>
-    <p class="muted">將訂閱概念延伸至處方飼料（如慢性病、體重或皮膚管理等），同樣以回院節點綁定健康追蹤。<b>待評估。</b></p>
+    <h3 style="margin-top:26px">處方飼料 × 訂閱制 <span class="q3tag eval">待評估</span><span class="v2tag">本次修訂</span></h3>
+    <p class="muted">將訂閱概念延伸至處方飼料（如慢性病、體重或皮膚管理等），同樣以回院節點綁定健康追蹤。</p>
+    <div class="q3box v2"><span class="h">本次修訂｜暫不公告，待行銷費用確認</span>
+      處方飼料訂閱<b>評估中、先不公告</b>。原因：希爾思（Hill's）可能<b>另外提供行銷費用</b>，待確認金額後，再就此品項<b>另做加碼</b>。在費用與加碼方案定案前，現場不主動推廣處方飼料訂閱。
+    </div>
   </section>
 </div>
 
@@ -865,28 +899,28 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
 <div class="wrap">
   <section class="block">
     <span class="eyebrow">目標設定 · targets</span>
-    <h2>各院目標：三檔轉換率（請總經理擇一）<span class="q3tag">Q3 變更</span></h2>
-    <p class="lead muted">本季目標僅適用「分院＋曼哈頓」共 11 院；基準改為 <b>2025 年 7–9 月來客數 × 轉換率</b>，無條件進位，最低門檻 10。總院（3）不設目標（見下方獎金制度）。</p>
+    <h2>各院目標：兩檔轉換率（請總經理擇一）<span class="q3tag">Q3 變更</span><span class="v2tag">本次修訂</span></h2>
+    <p class="lead muted">本季目標僅適用「分院＋曼哈頓」共 11 院；基準改為 <b>2025 年 7–9 月來客數 × 轉換率</b>，無條件進位，最低門檻 10。總院（3）不設目標（見下方獎金制度）。本版保留 <b>2.0%／2.5%</b> 兩檔（移除 3.0% 檔）。</p>
     <table class="tbl" style="margin-top:18px">
-      <caption>2025/7–9 月隻數 × 2.0% / 2.5% / 3.0%（最低門檻 10）。</caption>
-      <thead><tr><th>院別</th><th class="num">7–9月隻數</th><th class="num">2.0%</th><th class="num">2.5%</th><th class="num">3.0%</th></tr></thead>
+      <caption>2025/7–9 月隻數 × 2.0% / 2.5%（最低門檻 10）。</caption>
+      <thead><tr><th>院別</th><th class="num">7–9月隻數</th><th class="num">2.0%</th><th class="num">2.5%</th></tr></thead>
       <tbody>
-        <tr><td>高雄</td><td class="num">1,463</td><td class="num">30</td><td class="num">37</td><td class="num">44</td></tr>
-        <tr><td>苗栗縣府</td><td class="num">1,368</td><td class="num">28</td><td class="num">35</td><td class="num">42</td></tr>
-        <tr><td>中華</td><td class="num">1,057</td><td class="num">22</td><td class="num">27</td><td class="num">32</td></tr>
-        <tr><td>曼哈頓</td><td class="num">995</td><td class="num">20</td><td class="num">25</td><td class="num">30</td></tr>
-        <tr><td>仁德</td><td class="num">913</td><td class="num">19</td><td class="num">23</td><td class="num">28</td></tr>
-        <tr><td>金華</td><td class="num">871</td><td class="num">18</td><td class="num">22</td><td class="num">27</td></tr>
-        <tr><td>九如</td><td class="num">867</td><td class="num">18</td><td class="num">22</td><td class="num">27</td></tr>
-        <tr><td>北屯</td><td class="num">776</td><td class="num">16</td><td class="num">20</td><td class="num">24</td></tr>
-        <tr><td>嘉義西區</td><td class="num">643</td><td class="num">13</td><td class="num">17</td><td class="num">20</td></tr>
-        <tr><td>大灣</td><td class="num">536</td><td class="num">11</td><td class="num">14</td><td class="num">17</td></tr>
-        <tr><td>彰化中山</td><td class="num">327</td><td class="num">10</td><td class="num">10</td><td class="num">10</td></tr>
-        <tr class="hl"><td><b>合計</b></td><td class="num">9,816</td><td class="num"><b>205</b></td><td class="num"><b>252</b></td><td class="num"><b>301</b></td></tr>
+        <tr><td>高雄</td><td class="num">1,463</td><td class="num">30</td><td class="num">37</td></tr>
+        <tr><td>苗栗縣府</td><td class="num">1,368</td><td class="num">28</td><td class="num">35</td></tr>
+        <tr><td>中華</td><td class="num">1,057</td><td class="num">22</td><td class="num">27</td></tr>
+        <tr><td>曼哈頓</td><td class="num">995</td><td class="num">20</td><td class="num">25</td></tr>
+        <tr><td>仁德</td><td class="num">913</td><td class="num">19</td><td class="num">23</td></tr>
+        <tr><td>金華</td><td class="num">871</td><td class="num">18</td><td class="num">22</td></tr>
+        <tr><td>九如</td><td class="num">867</td><td class="num">18</td><td class="num">22</td></tr>
+        <tr><td>北屯</td><td class="num">776</td><td class="num">16</td><td class="num">20</td></tr>
+        <tr><td>嘉義西區</td><td class="num">643</td><td class="num">13</td><td class="num">17</td></tr>
+        <tr><td>大灣</td><td class="num">536</td><td class="num">11</td><td class="num">14</td></tr>
+        <tr><td>彰化中山</td><td class="num">327</td><td class="num">10</td><td class="num">10</td></tr>
+        <tr class="hl"><td><b>合計</b></td><td class="num">9,816</td><td class="num"><b>205</b></td><td class="num"><b>252</b></td></tr>
       </tbody>
     </table>
     <div class="q3box"><span class="h">選擇參考｜實際達成情況</span>
-      Q2 採 1.5% 目標，自 3/16 推行至今<b>各院幾乎都已達標、部分院已超過目標 2 倍</b>；加上本季健檢標準放寬，量能可望再提升。對照下：<b>2.0%＝穩健（總目標 +24%）、2.5%＝衝刺（+53%）、3.0%＝較進取（+82%）</b>。季節性極平緩、7–9 月略低於全年月均，故基期不灌水、目標屬公道。
+      Q2 採 1.5% 目標，自 3/16 推行至今<b>各院幾乎都已達標、部分院已超過目標 2 倍</b>；加上本季健檢標準放寬，量能可望再提升。對照下：<b>2.0%＝穩健（總目標 +24%）、2.5%＝衝刺（+53%）</b>。季節性極平緩、7–9 月略低於全年月均，故基期不灌水、目標屬公道。
       <span class="q2">（Q2：以 2025/3–5 月來客數 × 1.5%、最低門檻 10。）</span>
     </div>
     <p class="small muted" style="margin-top:8px">總院 7–9 月隻數供參（不設目標）：台北總院 3,075、台中總院 2,845、台南總院 3,119。</p>
@@ -975,8 +1009,10 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
     <div class="sblk c-gold">
       <h3><span class="ic" style="background:var(--gold)"></span>加購 85 折</h3>
       <ul>
-        <li><span class="ok">適用：</span>同日同次、影像（X 光／超音波）、院內檢驗（血液其他、尿檢、糞檢、血壓）。<b>新增：預防針（當天可打，不限劑數）<span class="qx">Q3</span></b></li>
+        <li><span class="ok">適用：</span>同日同次、影像（X 光／超音波）、院內檢驗（血液其他、尿檢、糞檢、血壓）。</li>
         <li><span class="no">排除：</span>分次／回溯、外送、藥品治療麻醉手術住院耗材、非健檢情境。</li>
+        <li><b>驅蟲藥：</b>不限品項，同品項兩件原價 <b>8 折</b>，不退換、特價品除外，一 case 限一次 <span class="qx">本次修訂</span></li>
+        <li><b>預防針：</b>加購<b>改列待評估</b>（暫不開放）<span class="qx">待評估</span></li>
       </ul>
     </div>
 
@@ -1003,17 +1039,18 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
     <div class="sblk c-red">
       <h3><span class="ic"></span>獎金一句話 <span class="qx">Q3</span></h3>
       <ul>
-        <li><b>分院＋曼哈頓（11 院）：</b>達團體目標(2/2.5/3% 擇一)→按件 A200/B400；團體競賽第1/2名 8,000/5,000。</li>
+        <li><b>分院＋曼哈頓（11 院）：</b>達團體目標(2/2.5% 擇一)→按件 A200/B400；團體競賽第1/2名 8,000/5,000。</li>
         <li><b>總院（3）：</b>個人業績，<b>無門檻</b>按件 A200/B400；無團體競賽。</li>
         <li>結算至 9/30，<b>10/15 發放</b>。非健檢情境不計入。</li>
       </ul>
     </div>
 
     <div class="sblk c-gold">
-      <h3><span class="ic" style="background:var(--gold)"></span>健檢情境 <span class="qx">Q3 放寬</span></h3>
+      <h3><span class="ic" style="background:var(--gold)"></span>健檢情境 <span class="qx">Q3 放寬·限定</span></h3>
       <ul>
-        <li>小病（腸胃/皮膚）經醫師推廣、飼主<b>額外</b>加做完整健檢（血檢）者，<b>可計入</b>。</li>
-        <li>重症、疾病回診不適用；術前評估僅<b>健康動物結紮</b>適用。</li>
+        <li>放寬但<b>限定搭配</b>：①疫苗 ②結紮（健康動物術前）③皮膚病，額外加做完整健檢（血檢）者<b>可計入</b>。</li>
+        <li><b>④洗牙方案</b>評估納入、細節另份報告說明。</li>
+        <li>重症、疾病回診不適用；上述範圍外一律不計入。</li>
         <li>加購前先出示明細與預估費用，飼主確認才執行。</li>
       </ul>
     </div>
@@ -1030,7 +1067,7 @@ h2 .q3tag,h3 .q3tag{font-size:12px}
     <div class="meta">2026 秋季健檢專案（Q3）　·　檔期 07/01 – 09/30　·　全體 14 院</div>
   </div>
   <hr>
-  <div class="fine">本網站僅供慈愛體系院內人員參考使用。內容若與體系最新公告不符，以公告為準；院方保留解釋及調整之權利。<br><span class="ver">內部專區 Q3 v1.2　·　最後更新 2026/06/13</span></div>
+  <div class="fine">本網站僅供慈愛體系院內人員參考使用。內容若與體系最新公告不符，以公告為準；院方保留解釋及調整之權利。<br><span class="ver">內部專區 Q3 v2　·　最後更新 2026/06/30（與總經理、採購冠葦討論後修訂）</span></div>
 </div></footer>
 <script>
 (function(){
