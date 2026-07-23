@@ -378,6 +378,12 @@ kbd{font-family:var(--data);background:var(--bg-2);border:1px solid var(--line);
 .legend b{color:var(--brown)}
 .q3tag{display:inline-block;font-family:var(--data);font-size:12px;font-weight:700;letter-spacing:.06em;color:#fff;background:var(--red);border-radius:5px;padding:2px 9px;margin-left:8px;vertical-align:middle}
 .q3tag.new{background:#4E8A3C}
+.doctitle{text-align:center;padding:44px 18px 28px}
+.doctitle .kick{font-family:var(--data);font-size:12.5px;font-weight:700;letter-spacing:.32em;color:var(--red);text-transform:uppercase;margin-bottom:16px}
+.doctitle .ttl{font-family:"Noto Serif TC",serif;color:var(--brown);font-weight:900;font-size:clamp(40px,6.4vw,60px);line-height:1.15;letter-spacing:.08em;margin:0}
+.doctitle .ttl .badge{display:inline-block;font-family:var(--data);font-weight:800;font-size:.4em;letter-spacing:.14em;color:#fff;background:var(--red);border-radius:999px;padding:.34em 1em;vertical-align:.2em;margin-left:.45em}
+.doctitle .rule{width:56px;height:3px;background:var(--gold);border-radius:2px;margin:18px auto 0}
+.doctitle .sub{margin-top:15px;color:var(--ink-soft);font-size:15px;letter-spacing:.05em}
 .q3tag.eval{background:var(--gold)}
 h2 .q3tag,h3 .q3tag{font-size:12px}
 .q3box{border:1px solid #EFC9C0;border-left:5px solid var(--red);background:#FCEFEC;border-radius:8px;padding:13px 16px;margin-top:14px;font-size:14.5px;line-height:1.7}
@@ -429,11 +435,12 @@ h2 .v2tag,h3 .v2tag{font-size:12px}
 <main>
 <section class="chapter" id="ch-index" data-i="0">
 <div class="wrap">
-  <section class="hero reveal" style="text-align:center;padding-bottom:10px">
-    <span class="eyebrow" style="color:var(--red);letter-spacing:.14em">BETTER HEALTH · BETTER LIFE</span>
-    <h1 style="font-size:clamp(2.1rem,5.2vw,3.4rem);line-height:1.15;margin:.12em 0 .18em;color:var(--brown)">2026 秋季健檢專案（Q3）</h1>
-    <p class="lead" style="margin:0 auto;max-width:56ch">慈愛動物醫院 · 內部參考與教育訓練專區</p>
-  </section>
+  <div class="doctitle">
+    <div class="kick">Better Health · Better Life</div>
+    <h1 class="ttl">2026 秋季健檢專案<span class="badge">Q3</span></h1>
+    <div class="rule"></div>
+    <div class="sub">慈愛動物醫院　·　內部參考與教育訓練專區</div>
+  </div>
 </div>
 
 <div class="wrap">
@@ -1136,7 +1143,7 @@ h2 .v2tag,h3 .v2tag{font-size:12px}
       <caption>2025/7–9 月隻數 × 2.5%（最低門檻 10）。</caption>
       <thead><tr><th>院別</th><th class="num">7–9月隻數</th><th class="num">目標（2.5%）</th></tr></thead>
       <tbody>
-        <tr><td>高雄</td><td class="num">1,463</td><td class="num">37</td></tr>
+        <tr style="background:#FBEFEA"><td>高雄 <span style="color:var(--red);font-weight:700">※</span></td><td class="num">1,463</td><td class="num"><b>23</b> <span class="q2" style="text-decoration:line-through;opacity:.65">37</span></td></tr>
         <tr><td>苗栗縣府</td><td class="num">1,368</td><td class="num">35</td></tr>
         <tr><td>中華</td><td class="num">1,057</td><td class="num">27</td></tr>
         <tr><td>曼哈頓</td><td class="num">995</td><td class="num">25</td></tr>
@@ -1147,11 +1154,12 @@ h2 .v2tag,h3 .v2tag{font-size:12px}
         <tr><td>嘉義西區</td><td class="num">643</td><td class="num">17</td></tr>
         <tr><td>大灣</td><td class="num">536</td><td class="num">14</td></tr>
         <tr><td>彰化中山</td><td class="num">327</td><td class="num">10</td></tr>
-        <tr class="hl"><td><b>合計</b></td><td class="num">9,816</td><td class="num"><b>252</b></td></tr>
+        <tr class="hl"><td><b>合計</b></td><td class="num">9,816</td><td class="num"><b>238</b></td></tr>
       </tbody>
     </table>
+    <div class="note warn" style="margin-top:12px"><span class="t">※ 高雄院目標調整（37 → 23）</span>高雄院因營業時間較去年縮減、來客數相對減少，且目前主要由廖醫師看診。經分析 2025 年 7–9 月全院 1,465 件病例中，廖醫師 909 件、約占 <b>62%</b>，故依其病例占比重新換算目標：37 × 62% ≈ 22.94，<b>調整為 23 件</b>（合計亦由 252 調整為 238 件）。</div>
     <div class="q3box"><span class="h">目標參考｜實際達成情況</span>
-      Q2 採 1.5% 目標，自 3/16 推行至今<b>各院幾乎都已達標、部分院已超過目標 2 倍</b>；加上本季健檢標準放寬，量能可望再提升。本季<b>統一以 2.5% 為目標，合計 252 件</b>，屬穩健偏衝刺之設定。季節性極平緩、7–9 月略低於全年月均，故基期不灌水、目標屬公道。
+      Q2 採 1.5% 目標，自 3/16 推行至今<b>各院幾乎都已達標、部分院已超過目標 2 倍</b>；加上本季健檢標準放寬，量能可望再提升。本季<b>統一以 2.5% 為目標，合計 238 件</b>（高雄院另依廖醫師病例占比調整，見上表註記），屬穩健偏衝刺之設定。季節性極平緩、7–9 月略低於全年月均，故基期不灌水、目標屬公道。
       <span class="q2">（Q2：以 2025/3–5 月來客數 × 1.5%、最低門檻 10。）</span>
     </div>
     <p class="small muted" style="margin-top:8px">總院 7–9 月隻數供參（不設目標）：台北總院 3,075、台中總院 2,845、台南總院 3,119。</p>
@@ -1304,7 +1312,7 @@ h2 .v2tag,h3 .v2tag{font-size:12px}
     <div class="meta">2026 秋季健檢專案（Q3）　·　檔期 07/15 – 10/15　·　全體 14 院</div>
   </div>
   <hr>
-  <div class="fine">本網站僅供慈愛體系院內人員參考使用。內容若與體系最新公告不符，以公告為準；院方保留解釋及調整之權利。<br><span class="ver">2026 秋季健檢專案（Q3）內部專區　·　最後更新 2026/07/17</span></div>
+  <div class="fine">本網站僅供慈愛體系院內人員參考使用。內容若與體系最新公告不符，以公告為準；院方保留解釋及調整之權利。<br><span class="ver">2026 秋季健檢專案（Q3）內部專區　·　最後更新 2026/07/23</span></div>
 </div></footer>
 <script>
 (function(){
